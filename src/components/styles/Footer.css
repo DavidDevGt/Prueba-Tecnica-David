@@ -1,0 +1,133 @@
+.footer {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f2937;
+  color: white;
+  padding: 3rem 3rem 5rem 3rem;
+  margin-top: 5rem;
+}
+
+.contact-section,
+.form-section {
+  flex: 1;
+}
+
+.contact-section h2,
+.form-section h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.contact-section p,
+.form-section .phone-input p {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.middle-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.progress-circle {
+  width: 100px;
+  height: 100px;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  background-color: #2d3748;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.phone-field {
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-right: 0.5rem;
+  outline: none;
+}
+
+.phone-field::placeholder {
+  color: #a0aec0;
+}
+
+.submit-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-button .fa {
+  pointer-events: none;
+  font-size: 1.5rem;
+  color: #cbd5e0;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .contact-section,
+  .middle-section,
+  .form-section {
+    flex: none;
+    margin-bottom: 2rem;
+  }
+
+  .form-section {
+    align-items: center;
+  }
+
+  .phone-input {
+    justify-content: center;
+  }
+
+  .contact-section h2,
+  .form-section h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-section h2,
+  .form-section h2 {
+    font-size: 2rem;
+  }
+
+  .progress-circle {
+    margin: 1rem;
+  }
+}

@@ -1,0 +1,73 @@
+.navbar {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E53F15;
+    padding: 10px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-toggler {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    display: none; /* Ocultar por defecto, solo mostrar en móviles */
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .navbar-logo {
+    height: 50px;
+    padding-left: 10px;
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 30px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:last-child {
+    margin-right: 10px;
+  }
+  
+  .navbar a:hover {
+    color: #ebebeb;
+  }
+
+  .navbar-links a {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+    }
+  
+    .navbar-toggler {
+      display: block;
+    }
+    
+    /* Cuando .navbar-links tiene la clase .active, mostrar los enlaces */
+    .navbar-links.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .navbar-logo {
+        margin:3px;
+    }
+  }
